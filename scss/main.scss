@@ -1,0 +1,81 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  font-family: "Lato", sans-serif;
+}
+p {
+  font-size: 1.1rem;
+}
+.navbar-text {
+  width: fit-content !important;
+}
+
+.welcome {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.products {
+  .product-cards {
+    padding: 20px;
+    .product-card {
+      height: 650px;
+      place-items: center;
+      text-align: center;
+      padding: 20px;
+
+      img,
+      .carousel {
+        height: 500px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.types {
+  .types-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      margin-top: 20px;
+
+      width: 80%;
+    }
+  }
+
+  .types-cards {
+    place-items: center;
+    padding: 20px;
+    .type-card {
+      img {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 20px 0 20px 0;
+      }
+    }
+  }
+}
+
+.decription-about {
+  img {
+    max-height: 500px;
+    width: 100%;
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
