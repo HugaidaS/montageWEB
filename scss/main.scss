@@ -31,14 +31,14 @@ p {
   .product-cards {
     padding: 20px;
     .product-card {
-      height: 650px;
+      max-height: 650px;
       place-items: center;
       text-align: center;
       padding: 20px;
 
       img,
       .carousel {
-        height: 500px;
+        max-height: 500px;
         width: 100%;
         margin: 0 auto;
       }
@@ -75,6 +75,25 @@ p {
   img {
     max-height: 500px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .type-card {
+    img {
+      width: 100%;
+    }
+  }
+  .certificates {
+    img {
+      width: 100%;
+    }
+  }
+  .product-card {
+    height: 100%;
+    img {
+      height: 250px;
+    }
   }
 }
 
